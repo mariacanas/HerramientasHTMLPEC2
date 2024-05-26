@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portada - Nil Moliner</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+
+   <header>
+        <img class="logoNil" src="images/LogoNilMoliner.png" alt="Logo Nil Moliner">    
+        <h1>Nil Moliner</h1>
+        
+        <nav id="nav" class="responsive">
+            <ul>
+                <li><a href="#" class="selected">Portada</a></li>
+                <li><a href="presentacion.html">Presentación</a></li>
+                <li><a href="categoria.html">Categoria</a></li>
+                <li><a href="enlaces.html">Enlaces</a></li>
+            </ul>
+        </nav>
+        <!-- Icono del menu responsive -->
+        <div id="icono-nav" onclick="responsiveMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+        </div>
+   </header>
+
+   <main data-aos="fade-right" >
+        <section id="inicio" data-aos="fade-up">
+            <div class="presentacion">
+                <h2>Bienvenidos</h2>
+                <a href="#nuevoAlbum">Ir a mi Último Album</a>
+            </div>
+        </section>
+
+         <!--Sección Proximos Conciertos-->
+         <section id="conciertos">
+            <h3>Proximos Conciertos</h3>
+            <div class="conciertos" data-aos="fade-right">
+                <div class="concierto">
+                    <span> 18 de Octubre 2024 </span>
+                    <span> VALENCIA </span>
+                    <span> PALAU ALAMEDA</span>
+                    <span class="icono"><i class="fa-solid fa-ticket"></i></span>
+                </div>
+
+                <div class="concierto">
+                    <span> 15 de Noviembre 2024 </span>
+                    <span> VALLADOLID </span>
+                    <span> LAVA </span>
+                    <span class="icono"><i class="fa-solid fa-ticket"></i></span>
+                </div>
+
+                <div class="concierto">
+                    <span> 23 de Noviembre 2024 </span>
+                    <span> BILBAO </span>
+                    <span> SANTANA </span>
+                    <span class="icono"><i class="fa-solid fa-ticket"></i></span>
+                </div>
+
+                <div class="concierto">
+                    <span> 14 de Diciembre 2024 </span>
+                    <span> MADRID </span>
+                    <span> LAS VENTAS </span>
+                    <span class="icono"><i class="fa-solid fa-ticket"></i></span>
+                </div>
+
+            </div>
+        </section>
+
+        <!--Sección Nuevo Album-->
+        <section id="nuevoAlbum">
+            <h3>Canciones Último Albúm</h3>
+            <div class="nuevoAlbum">
+                <div class="cancion">
+                    <div class="info">
+                        <p><span class="lista"></span>Mi Bandera</p>
+                        <span class="porcentaje">2:51</span>
+                    </div>
+                    <div class="barra">
+                        <div class="cancion"></div>
+                    </div>
+                </div>
+
+                <div class="cancion">
+                    <div class="info">
+                        <p><span class="lista"></span>Good Day</p>
+                        <span class="porcentaje">3:12</span>
+                    </div>
+                    <div class="barra">
+                        <div class="cancion"></div>
+                    </div>
+                </div>
+
+                <div class="cancion">
+                    <div class="info">
+                        <p><span class="lista"></span>Nada Que Decir</p>
+                        <span class="porcentaje">3:45</span>
+                    </div>
+                    <div class="barra">
+                        <div class="cancion"></div>
+                    </div>
+                </div>
+
+                <div class="cancion">
+                    <div class="info">
+                        <p><span class="lista"></span>Luces De Ciudad</p>
+                        <span class="porcentaje">2:29</span>
+                    </div>
+                    <div class="barra">
+                        <div class="cancion"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Sección subscripción-->
+        <section id="contacto">
+            <h3>¡Suscríbete y entérate de las fechas de conciertos y entradas!</h3>
+            <div class="contenedor-form">
+                <form action="#">
+                    <div class="mitad">
+                        <input type="text" placeholder="Nombre Completo">
+                        <input type="text" placeholder="Direccion de Email">
+                    </div>
+                    <input type="submit" value="Subscribete" class="btn">
+                </form>
+            </div>
+        </section>
+        
+   </main>
+    
+
+   <footer>
+        <img class="logoNil" src="images/LogoNilMoliner.png" alt="Logo Nil Moliner">
+        
+        <div class="enlaces-pagina">
+                <ul>
+                <li><a href="#" class="selected">Portada</a></li>
+                <li><a href="presentacion.html">Presentación</a></li>
+                <li><a href="categoria.html">Categoria</a></li>
+                <li><a href="enlaces.html">Enlaces</a></li>
+            </ul>
+        </div>
+        
+
+        <div class="redes-sociales">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram-square"></i></a></li>
+            </ul>
+        </div>
+   </footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
