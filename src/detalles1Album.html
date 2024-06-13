@@ -11,7 +11,7 @@
 <body>
 
     <header>
-        <img class="logoNil" src="images/LogoNilMoliner.png" alt="Logo Nil Moliner">    
+        <img class="logoNil" src="images/LogoNilMoliner.png" loading="lazy" alt="Logo Nil Moliner">    
         <h1>Nil Moliner</h1>
                        
         <nav id="nav" class="responsive">
@@ -42,7 +42,7 @@
             <picture>
                 <source media="(max-width: 800px)" srcset="./images/NilMolinerPequeno.png">
                 <source media="(max-width: 1000px)" srcset="./images/NilMolinerMedio.png">
-                <img src="./images/destacadaNil.png" alt="Nuevo Álbum" id="featured-image">
+                <img src="./images/destacadaNil.png" loading="lazy" alt="Nuevo Álbum" id="featured-image">
             </picture>
         </section>
 
@@ -82,10 +82,10 @@
                 </ol>
 
                 <div class="contenido-multimedia">
-                    <img src="./images/detallesAlbum.jpg" alt="Foto tocando bateria">
-                    <img src="./images/foto_album_3.jpg" alt="Portada nuevo Album">
-                    <img src="./images/detallesAlbum3.png" alt="Portada nuevo Album">
-                    <img src="./images/detallesAlbum2.jpg" alt="Portada nuevo Album">
+                    <img src="./images/detallesAlbum.jpg" loading="lazy" alt="Foto tocando bateria">
+                    <img src="./images/foto_album_3.jpg" loading="lazy" alt="Portada nuevo Album">
+                    <img src="./images/detallesAlbum3.png" loading="lazy" alt="Portada nuevo Album">
+                    <img src="./images/detallesAlbum2.jpg" loading="lazy" alt="Portada nuevo Album">
                 </div>
             </div>
         </section>
@@ -117,7 +117,7 @@
     </main>
 
     <footer>
-        <img class="logoNil" src="images/LogoNilMoliner.png" alt="Logo Nil Moliner">
+        <img class="logoNil" src="images/LogoNilMoliner.png" loading="lazy" alt="Logo Nil Moliner">
         
         <div class="enlaces-pagina">
                 <ul>
@@ -138,10 +138,10 @@
         </div>
    </footer>
 
-   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
+   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
+    <script defer>
         AOS.init();
     </script>
-     <script src="./js/script.js"></script>
+     <script src="./js/script.js" defer></script>
 </body>
 </html>
