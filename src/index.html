@@ -6,14 +6,18 @@
     <title>Portada - Nil Moliner</title>
     
     <link rel="stylesheet" href="css/style.css" />
+
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"></noscript>
+
+    <!-- Preload de la fuente Montserrat -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" as="style">
 
 </head>
 <body>
 
    <header>
-        <img class="logoNil" src="images/LogoNilMoliner.png" loading="lazy" alt="Logo Nil Moliner">    
+    <img class="logoNil" src="images/LogoNilMoliner.webp" width="150" height="150" loading="lazy" alt="Logo Nil Moliner">    
         <h1>Nil Moliner</h1>
         
         <nav id="nav" class="responsive">
@@ -170,6 +174,15 @@
     </script>
 
     <script src="./js/script.js" defer></script>
+
+    <script>
+        (function() {
+            var link = document.createElement('link');
+            link.href = 'https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap';
+            link.rel = 'stylesheet';
+            document.head.appendChild(link);
+        })();
+    </script>
 
 </body>
 </html>
