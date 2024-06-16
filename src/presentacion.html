@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Presentacion - Nil Moliner</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"></noscript>
 </head>
 <body>
     
@@ -21,7 +26,6 @@
                 <li><a href="enlaces.html">Enlaces</a></li>
             </ul>
         </nav>
-        <!-- Icono del menu responsive -->
         <div id="icono-nav" onclick="responsiveMenu()">
             <i class="fa-solid fa-bars"></i>
         </div>
@@ -31,12 +35,9 @@
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
             <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
         </div>
-
     </header>
 
     <main id="presentacion">
-        
-        
         <section id="presentacioninicio" data-aos="fade-right" data-aos-duration="1000">
             <h2>Descubre a Nil Moliner
                 <svg class="animated-line" width="100%" height="15">
@@ -86,8 +87,6 @@
 
             <p>En resumen, Nil Moliner es mucho más que un músico: es un artista que se preocupa en ayudar a los demás
                 y es muy auténtico en su música española. Su carisma y talento dejan una huella imborrable en la industria musical y en sus seguidores en todo el mundo.</p>
-           
-       
         </section>
 
         <section id="datosCuriosos">
@@ -110,7 +109,6 @@
                 <img src="./images/inicios.jpeg" loading="lazy" alt="Nil Moliner Inicios">
                 <img src="./images/concierto.jpg" loading="lazy" alt="Nil Moliner Concierto">
             </div>
-            
         </section>
 
         <section id="colaboraciones" data-aos="fade-right">
@@ -134,9 +132,7 @@
                 <img src="./images/nilmolinerlapegatina.jpg" loading="lazy" alt="Canción Colaboración con La Pegatina">
                 <img src="./images/nadaquedecir.jpg" loading="lazy" alt="Canción Colaboración con Marlena">
             </div>
-
         </section>
-
     </main>
 
     <footer>
@@ -144,7 +140,7 @@
         
         <div class="enlaces-pagina">
                 <ul>
-                <li><a href="index.html" >Portada</a></li>
+                <li><a href="index.html">Portada</a></li>
                 <li><a href="#" class="selected">Presentación</a></li>
                 <li><a href="categoria.html">Categoria</a></li>
                 <li><a href="enlaces.html">Enlaces</a></li>
@@ -159,13 +155,12 @@
                 <li><a href="#"><i class="fa-brands fa-instagram-square"></i></a></li>
             </ul>
         </div>
-   </footer>
+    </footer>
 
-   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
     <script defer>
         AOS.init();
     </script>
     <script src="./js/script.js" defer></script>
-
 </body>
 </html>
