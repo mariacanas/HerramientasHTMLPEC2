@@ -4,14 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categoria - Grupo de música</title>
-    <link rel="stylesheet" href="css/style.css" />
+    
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"></noscript>
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap"></noscript>
+
+    <link rel="preload" href="images/LogoNilMoliner.webp" as="image" type="image/webp">
+
+
 </head>
 <body>
 
     <header>
-        <img class="logoNil" src="images/LogoNilMoliner.png" loading="lazy" alt="Logo Nil Moliner">    
+        <img src="images/LogoNilMoliner.webp" width="80" height="80" loading="lazy" alt="Logo Nil Moliner">    
         <h1>Nil Moliner</h1>
                        
         <nav id="nav" class="responsive">
@@ -42,7 +54,7 @@
             <picture>
                 <source media="(max-width: 800px)" srcset="./images/NilMolinerPequeno.png">
                 <source media="(max-width: 1000px)" srcset="./images/NilMolinerMedio.png">
-                <img src="./images/destacadaNil.png" loading="lazy" alt="Nuevo Álbum" id="featured-image">
+                <img src="images/destacadaNil.webp" loading="lazy" alt="Nuevo Álbum" id="featured-image">
             </picture>
         </section>
 
@@ -82,10 +94,10 @@
                 </ol>
 
                 <div class="contenido-multimedia">
-                    <img src="./images/detallesAlbum.jpg" loading="lazy" alt="Foto tocando bateria">
-                    <img src="./images/foto_album_3.jpg" loading="lazy" alt="Portada nuevo Album">
-                    <img src="./images/detallesAlbum3.png" loading="lazy" alt="Portada nuevo Album">
-                    <img src="./images/detallesAlbum2.jpg" loading="lazy" alt="Portada nuevo Album">
+                    <img src="images/detallesAlbum.webp" loading="lazy" alt="Foto tocando bateria">
+                    <img src="images/foto_album_3.webp" loading="lazy" alt="Portada nuevo Album">
+                    <img src="images/detallesAlbum3.webp" loading="lazy" alt="Portada nuevo Album">
+                    <img src="images/detallesAlbum2.webp" loading="lazy" alt="Portada nuevo Album">
                 </div>
             </div>
         </section>
@@ -117,17 +129,16 @@
     </main>
 
     <footer>
-        <img class="logoNil" src="images/LogoNilMoliner.png" loading="lazy" alt="Logo Nil Moliner">
+        <img  src="images/LogoNilMoliner.webp" width="80" height="80" loading="lazy" alt="Logo Nil Moliner">
         
         <div class="enlaces-pagina">
-                <ul>
-                <li><a href="index.html" >Portada</a></li>
-                <li><a href="presentacion.html" >Presentación</a></li>
-                <li><a href="categoria.html">Categoria</a></li>
+            <ul>
+                <li><a href="index.html" class="selected">Portada</a></li>
+                <li><a href="presentacion.html">Presentación</a></li>
+                <li><a href="categoria.html">Categoría</a></li>
                 <li><a href="enlaces.html">Enlaces</a></li>
             </ul>
         </div>
-        
 
         <div class="redes-sociales">
             <ul>
@@ -138,10 +149,11 @@
         </div>
    </footer>
 
-   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
-    <script defer>
-        AOS.init();
-    </script>
-     <script src="./js/script.js" defer></script>
+   <script defer src="js/script.js"></script>
+
+   <!-- Inicialización de AOS y carga de fuentes -->
+   <script defer>
+       AOS.init();
+   </script>
 </body>
 </html>

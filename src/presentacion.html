@@ -4,13 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Presentacion - Nil Moliner</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"></noscript>
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap"></noscript>
+
+    <link rel="preload" href="images/LogoNilMoliner.webp" as="image" type="image/webp">
+
+
 </head>
 <body>
     
     <header>
-        <img class="logoNil" src="images/LogoNilMoliner.png" loading="lazy" alt="Logo Nil Moliner">    
+        <img src="images/LogoNilMoliner.webp" width="80" height="80" loading="lazy" alt="Logo Nil Moliner">    
         <h1>Nil Moliner</h1>
          
         <nav id="nav" class="responsive">
@@ -48,9 +61,9 @@
             <p>En este sitio vas a conocer mejor a Nil Moliner, descubriendo sus inicios, canciones y albunes. </p>
 
             <div class="multimedia">
-                <img src="./images/foto_album_1.jpg" loading="lazy" alt="Nil Moliner">
-                <img src="./images/noticia2.jpg" loading="lazy" alt="Nil Moliner">
-                <img src="./images/detallesAlbum3.png" loading="lazy" alt="Nil Moliner">
+                <img src="images/foto_album_1.webp" loading="lazy" alt="Nil Moliner">
+                <img src="images/noticia2.webp" loading="lazy" alt="Nil Moliner">
+                <img src="images/detallesAlbum3.webp" loading="lazy" alt="Nil Moliner">
 
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/3V3wqsvn39M?si=0Xr1KroD-5nV8Mtt" title="YouTube video player" style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/IMaUqEhGzKg?si=2-eiWEHB5qCT8-vm" title="YouTube video player" style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -74,9 +87,9 @@
                 que incluía canciones como "Soldadito de Hierro o Mi religión". Canciones con las que consigió obtener grán fama.</p>
             
             <div class="multimedia">
-                <img src="./images/foto_album_1.jpg" loading="lazy" alt="Logo Primer Album">
-                <img src="./images/soldaditoHierro.jpg" loading="lazy" alt="Canción Soldadito de Hierro">
-                <img src="./images/miReligion.jpeg" loading="lazy" alt="Canción Mi Religión">
+                <img src="images/foto_album_1.webp" loading="lazy" alt="Logo Primer Album">
+                <img src="images/soldaditoHierro.webp" loading="lazy" alt="Canción Soldadito de Hierro">
+                <img src="images/miReligion.webp" loading="lazy" alt="Canción Mi Religión">
             </div>
 
 
@@ -107,8 +120,8 @@
             </ol>
 
             <div class="multimedia">
-                <img src="./images/inicios.jpeg" loading="lazy" alt="Nil Moliner Inicios">
-                <img src="./images/concierto.jpg" loading="lazy" alt="Nil Moliner Concierto">
+                <img src="images/inicios.webp" loading="lazy" alt="Nil Moliner Inicios">
+                <img src="images/concierto.webp" loading="lazy" alt="Nil Moliner Concierto">
             </div>
             
         </section>
@@ -130,9 +143,9 @@
             </ul>
 
             <div class="multimedia">
-                <img src="./images/meneito.jpg" loading="lazy" alt="Canción Colaboración con Yera">
-                <img src="./images/nilmolinerlapegatina.jpg" loading="lazy" alt="Canción Colaboración con La Pegatina">
-                <img src="./images/nadaquedecir.jpg" loading="lazy" alt="Canción Colaboración con Marlena">
+                <img src="images/meneito.webp" loading="lazy" alt="Canción Colaboración con Yera">
+                <img src="images/nilmolinerlapegatina.webp" loading="lazy" alt="Canción Colaboración con La Pegatina">
+                <img src="images/nilmolinerlapegatina.webp" loading="lazy" alt="Canción Colaboración con Marlena">
             </div>
 
         </section>
@@ -140,17 +153,16 @@
     </main>
 
     <footer>
-        <img class="logoNil" src="images/LogoNilMoliner.png" loading="lazy" alt="Logo Nil Moliner">
+        <img  src="images/LogoNilMoliner.webp" width="80" height="80" loading="lazy" alt="Logo Nil Moliner">
         
         <div class="enlaces-pagina">
-                <ul>
-                <li><a href="index.html" >Portada</a></li>
+            <ul>
+                <li><a href="index.html">Portada</a></li>
                 <li><a href="#" class="selected">Presentación</a></li>
-                <li><a href="categoria.html">Categoria</a></li>
+                <li><a href="categoria.html">Categoría</a></li>
                 <li><a href="enlaces.html">Enlaces</a></li>
             </ul>
         </div>
-        
 
         <div class="redes-sociales">
             <ul>
@@ -161,11 +173,12 @@
         </div>
    </footer>
 
-   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
-    <script defer>
-        AOS.init();
-    </script>
-    <script src="./js/script.js" defer></script>
+   <script defer src="js/script.js"></script>
+
+   <!-- Inicialización de AOS y carga de fuentes -->
+   <script defer>
+       AOS.init();
+   </script>
 
 </body>
 </html>
