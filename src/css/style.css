@@ -426,11 +426,11 @@ nav ul li a:hover, .enlaces-pagina ul li a:hover {
   display: flex;
   flex-direction: column;
 }
-.disco img {
+/*.disco img {
   padding: 20px;
   width: 30%;
   margin: 20px;
-}
+}*/
 .disco a {
   color: #fff;
   background-color: #000;
