@@ -2,7 +2,7 @@
 @import "../../node_modules/normalize.css/normalize.css";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap");
 * {
-  --color-letra:red;
+  --color-letra: red;
   box-sizing: border-box;
   font-family: "Montserrat";
   margin: 0;
@@ -19,7 +19,6 @@ main {
   margin-top: 100px;
 }
 
-
 header {
   z-index: 100;
   background-color: #000;
@@ -27,7 +26,6 @@ header {
   align-items: center;
   width: 100%;
   height: 100px;
-  max-width: 100%;
   padding: 10px;
   display: flex;
   position: fixed;
@@ -38,6 +36,7 @@ nav {
   margin: auto;
   text-align: center;
 }
+
 nav ul {
   display: flex;
   align-items: center;
@@ -46,19 +45,18 @@ nav ul {
   font-weight: bold;
 }
 
-nav ul li{
+nav ul li {
   list-style: none;
 }
 
-nav ul li a {
+nav ul li a,
+a.selected {
   color: white;
 }
 
-a.selected {
-  color: var(--color-letra) !important;
-}
-
-nav ul li a:hover, .enlaces-pagina ul li a:hover {
+a.selected,
+nav ul li a:hover,
+.enlaces-pagina ul li a:hover {
   color: var(--color-letra);
   cursor: pointer;
 }
@@ -67,24 +65,21 @@ nav ul li a:hover, .enlaces-pagina ul li a:hover {
   display: flex;
   gap: 30px;
   font-size: 20px;
-  margin-right: 20px;
-  margin-left: 10px;
+  margin: 0 20px 0 10px;
   padding: 5px;
 }
+
 .redes a {
   color: white;
 }
+
 .redes a:hover {
   color: var(--color-letra);
   cursor: pointer;
 }
 
 #inicio {
-  background-color: black;
-  background-image: url("../images/logo.webp");
-  background-size: 400px 400px;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: black url("../images/logo.webp") center/400px 400px no-repeat;
 }
 
 #icono-nav {
@@ -99,22 +94,24 @@ nav ul li a:hover, .enlaces-pagina ul li a:hover {
   flex-direction: column;
   align-items: center;
 }
+
 .presentacion h2 {
   font-size: 40px;
   letter-spacing: 5px;
-  margin-top: 190px;
+  margin: 190px 0 15px;
   text-transform: uppercase;
-  margin-bottom: 15px;
   text-align: center;
 }
+
 .presentacion h2 span {
   font-size: 30px;
   color: var(--color-letra);
 }
+
 .presentacion a {
   color: black;
   text-decoration: none;
-  border: 2px white solid;
+  border: 2px solid white;
   padding: 20px;
   text-transform: uppercase;
   font-weight: bold;
@@ -123,52 +120,45 @@ nav ul li a:hover, .enlaces-pagina ul li a:hover {
   clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 88% 86%, 75% 100%, 46% 90%, 0 100%);
   background-color: white;
 }
+
 .presentacion a:hover {
   background-color: var(--color-letra);
   cursor: pointer;
 }
 
-/*Seccion Últimos Conciertos*/
 #conciertos {
   position: relative;
   color: white;
   text-align: center;
   padding: 80px;
-  overflow: hidden; 
+  overflow: hidden;
   background-color: black;
   z-index: 1;
 }
 
-#conciertos::before{
+#conciertos::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/proximosConciertos.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/proximosConciertos.jpg") center/cover no-repeat fixed;
   clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-  z-index: -1; 
+  z-index: -1;
 }
 
 #conciertos h3 {
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin: 30px 0 40px;
   font-size: 25px;
-  color: white;
 }
 
 .conciertos {
-  gap: 30px;
   display: grid;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  gap: 30px;
+  margin: 100px 0;
   z-index: 1;
 }
 
@@ -177,32 +167,30 @@ nav ul li a:hover, .enlaces-pagina ul li a:hover {
   cursor: pointer;
   background-color: black;
   border-radius: 10px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 0;
   font-weight: bold;
   transition: all 0.5s;
-  display: block;
   width: 70%;
   margin: auto;
   border: 2px solid white;
   z-index: 2;
 }
+
 .concierto:hover {
   box-shadow: 0 0 10px black;
-  cursor: pointer;
 }
+
 .concierto .icono {
   font-size: 25px;
   display: inline-block;
 }
-
-/*Sección NuevoAlbum*/
+/* Sección NuevoAlbum */
 #nuevoAlbum {
   position: relative;
   color: white;
   text-align: center;
   padding: 80px;
-  overflow: hidden; 
+  overflow: hidden;
   background-color: black;
   z-index: -1;
 }
@@ -214,19 +202,15 @@ nav ul li a:hover, .enlaces-pagina ul li a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/nuevoAlbum.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/nuevoAlbum.webp") center/cover no-repeat fixed;
   clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
-  z-index: -1; 
+  z-index: -1;
 }
+
 #nuevoAlbum h3 {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 40px 0;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  text-align: center;
   font-size: 22px;
 }
 
@@ -234,10 +218,12 @@ nav ul li a:hover, .enlaces-pagina ul li a:hover {
   max-width: 650px;
   margin: 20px auto;
 }
+
 .nuevoAlbum .cancion .info {
   display: flex;
   justify-content: space-between;
 }
+
 .nuevoAlbum .cancion .lista {
   display: inline-block;
   margin-right: 20px;
@@ -245,8 +231,8 @@ nav ul li a:hover, .enlaces-pagina ul li a:hover {
   width: 15px;
   background-color: white;
 }
+
 .nuevoAlbum .cancion .barra {
-  color: white;
   width: 100%;
   height: 5px;
   margin: 10px 0;
@@ -254,13 +240,11 @@ nav ul li a:hover, .enlaces-pagina ul li a:hover {
 }
 
 .barra .cancion {
-  background-color: #fff;
+  background-color: white;
   width: 95%;
   height: 6px;
   animation: crecimientoBarraCancion 2s forwards;
 }
-
-
 
 @keyframes crecimientoBarraCancion {
   0% {
@@ -270,86 +254,80 @@ nav ul li a:hover, .enlaces-pagina ul li a:hover {
     width: 95%;
   }
 }
-/*Sección Contacto*/
+/* Sección Contacto */
 #contacto {
   background-color: #8C8A8A;
   padding: 60px;
 }
+
 #contacto h3 {
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  text-decoration: underline;
-  color: white;
-  text-decoration-color: #d3d3d3;
-  text-decoration-thickness: 5px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 40px 0;
   text-align: center;
   font-size: 22px;
+  text-transform: uppercase;
+  text-decoration: underline 5px #d3d3d3;
+  letter-spacing: 1.5px;
+  color: white;
 }
+
 #contacto .contenedor-form form {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
+
 #contacto .contenedor-form .mitad {
   display: flex;
   gap: 20px;
 }
-#contacto .contenedor-form .mitad input {
-  border: solid 1px black;
+
+#contacto .contenedor-form .mitad input,
+#contacto .contenedor-form .fila input,
+#contacto .contenedor-form .fila textarea {
+  border: 1px solid black;
   border-radius: 10px;
   padding: 15px;
   width: 100%;
   font-size: 15px;
 }
-#contacto .contenedor-form .fila input, #contacto .contenedor-form .fila textarea {
-  border: solid 1px black;
-  border-radius: 10px;
-  padding: 15px;
-  width: 100%;
-  font-size: 15px;
-}
+
 #contacto .contenedor-form .btn {
   width: auto;
   margin: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 15px;
   color: black;
   cursor: pointer;
   font-weight: bold;
   height: 50px;
   clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 88% 86%, 75% 100%, 46% 90%, 0 100%);
 }
+
 #contacto .contenedor-form .btn:hover {
   background-color: black;
   color: white;
 }
 
-/*Página Categorias*/
+/* Página Categorías */
 #premiosCanciones {
   width: 90%;
   color: white;
   min-height: 400px;
   margin: 150px auto 50px;
-  background-image: linear-gradient(rgba(1, 0, 0, 0.8), rgb(0, 0, 1)), url(../images/premiosNil.jpg);
-  background-position: center;
-  background-size: 60%;
+  background: linear-gradient(rgba(1, 0, 0, 0.8), rgb(0, 0, 1)), url(../images/premiosNil.jpg) center/60% no-repeat;
   padding: 20px;
 }
+
 #premiosCanciones h2 {
   padding: 40px;
   text-align: center;
   color: white;
 }
+
 #premiosCanciones ul {
-  display: block;
-  justify-content: space-around;
   width: 70%;
   margin: auto;
 }
+
 #premiosCanciones ul li {
   color: white;
   font-weight: bold;
@@ -358,31 +336,19 @@ nav ul li a:hover, .enlaces-pagina ul li a:hover {
 }
 
 .recortesprensa {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-.recortesprensa h3 {
-  letter-spacing: 1.5px;
-  font-size: 22px;
-  text-decoration: underline;
-  text-decoration-color: grey;
-  text-decoration-thickness: 5px;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-  margin-top: 40px;
-  text-align: center;
+  margin: 50px 0;
 }
 
-#premiosCanciones h2, #discografia h2, #detalles1Album h2 {
-  letter-spacing: 1.5px;
-  font-size: 22px;
-  text-decoration: underline;
-  text-decoration-color: grey;
-  text-decoration-thickness: 5px;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-  margin-top: 40px;
+.recortesprensa h3,
+#premiosCanciones h2,
+#discografia h2,
+#detalles1Album h2 {
+  margin: 40px 0;
   text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-decoration: underline 5px grey;
+  letter-spacing: 1.5px;
 }
 
 #recortesprensa .noticias {
@@ -397,9 +363,10 @@ nav ul li a:hover, .enlaces-pagina ul li a:hover {
   display: inline-block;
   position: relative;
   max-width: 450px;
-  margin-right: 20px;
   max-height: 400px;
+  margin-right: 20px;
 }
+
 .noticia .img-p {
   position: relative;
   overflow: hidden;
@@ -407,7 +374,7 @@ nav ul li a:hover, .enlaces-pagina ul li a:hover {
 
 .disco {
   background-color: #d3d3d3;
-  border: 2px black solid;
+  border: 2px solid black;
   width: 80%;
   display: flex;
   align-items: center;
@@ -417,20 +384,15 @@ nav ul li a:hover, .enlaces-pagina ul li a:hover {
   color: white;
   padding: 15px;
 }
+
 .disco .info {
-  font-size: 15px;
   width: 70%;
+  font-size: 15px;
   text-align: center;
   line-height: 2;
-  /* gap: 10px; */
   display: flex;
   flex-direction: column;
 }
-/*.disco img {
-  padding: 20px;
-  width: 30%;
-  margin: 20px;
-}*/
 .disco a {
   color: #fff;
   background-color: #000;
@@ -440,86 +402,89 @@ nav ul li a:hover, .enlaces-pagina ul li a:hover {
   text-decoration: none;
   display: inline;
 }
+
 .disco a:hover {
   color: var(--color-letra);
 }
 
-.disco1 {
-  background-image: linear-gradient(rgba(1, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(../images/foto_album_1.jpg);
+.disco1, .disco2, .disco3 {
+  background-image: linear-gradient(rgba(1, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
   background-position: center;
   background-size: 60%;
+}
+
+.disco1 {
+  background-image: linear-gradient(rgba(1, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(../images/foto_album_1.jpg);
   margin-left: 100px;
 }
 
-
 .disco2 {
   background-image: linear-gradient(rgba(1, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(../images/foto_album_2.jpg);
-  background-position: center;
-  background-size: 60%;
   margin-right: 100px;
 }
 
 .disco3 {
   background-image: linear-gradient(rgba(1, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(../images/foto_album_3.jpg);
-  background-position: center;
-  background-size: 60%;
   margin-left: 100px;
 }
 
-.discoDestacada{
+.discoDestacada {
   width: 80%;
   display: flex;
   gap: 10px;
 }
 
-.discoDestacada .disco{
+.discoDestacada .disco {
   flex: 0 0 70%;
 }
 
-.discoDestacada .destacadas{
+.discoDestacada .destacadas {
   flex: 0 0 30%;
 }
 
 .noticia img {
-  max-width: 100%;
   height: auto;
-  border: black solid 2px;
+  border: 2px solid black;
   border-radius: 5px;
 }
+
 .noticia:hover img {
   filter: grayscale(0);
   cursor: pointer;
 }
+
 .noticia .info {
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
   padding: 10px;
   position: absolute;
   bottom: 6px;
-  max-width: 100%;
-  min-width: 200px;
   width: 100%;
   transform: translateY(20%);
   opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
 }
+
 .noticia:hover .info {
   opacity: 1;
-  transition: 0.5s;
   transform: translateY(0%);
   cursor: pointer;
 }
+
 .noticia a {
   color: white;
 }
+
 .noticia a:hover {
   color: red;
 }
 
-/*Página detalles Album*/
+/* Página detalles Album */
 #detalles1Album {
   margin: 150px auto;
   width: 90%;
 }
+
 #detalles1Album p {
   padding: 10px;
   line-height: 1.5;
@@ -535,6 +500,7 @@ cite {
   margin: auto;
   width: 70%;
 }
+
 #info-album h2 {
   text-align: center;
 }
@@ -556,6 +522,7 @@ cite {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
+
 .contenido-multimedia img {
   width: 250px;
   height: 200px;
@@ -574,9 +541,11 @@ cite {
   text-align: center;
   margin-bottom: 10px;
 }
+
 .pregunta p {
   font-size: 15px;
 }
+
 .pregunta a {
   color: white;
   background-color: black;
@@ -587,39 +556,37 @@ cite {
   margin: auto;
   width: 70%;
 }
+
 .pregunta a:hover {
   color: red;
 }
+/* Estilos para el SVG animado */
+.animated-line line {
+  stroke-dasharray: 150;
+  stroke-dashoffset: 0;
+  animation: move-line 3s linear infinite;
+}
 
-/*Página Presentación*/
+@keyframes move-line {
+  to {
+    stroke-dashoffset: -700;
+  }
+}
 
-
-    /* Estilos para el SVG animado */
-
-    .animated-line line {
-      stroke-dasharray: 150;
-      stroke-dashoffset: 0;
-      animation: move-line 3s linear infinite;
-    }
-
-    @keyframes move-line {
-      to {
-          stroke-dashoffset: -700;
-      }
-    }
-
-
+/* Estilos generales */
 #presentacion h2 {
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px;
   color: var(--color-letra);
   font-size: 35px;
-  border: 1px var(--color-letra) solid;
+  border: 1px solid var(--color-letra);
   padding: 15px;
 }
 
-#presentacioninicio, #biografia, #datosCuriosos, #colaboraciones {
+#presentacioninicio,
+#biografia,
+#datosCuriosos,
+#colaboraciones {
   color: #fff;
   background: #000;
   flex-direction: column;
@@ -628,18 +595,18 @@ cite {
   gap: 20px;
   margin: 100px auto 20px;
   padding: 45px;
-  display: flex;
   width: 95%;
 }
 
-#presentacion p, #presentacion li {
+#presentacion p,
+#presentacion li {
   width: 80%;
   margin: auto;
   font-weight: bold;
   line-height: 2;
   font-size: 20px;
-  justify-content: center;
 }
+
 #presentacion ul {
   min-width: 400px;
   height: 300px;
@@ -647,22 +614,25 @@ cite {
 
 .multimedia {
   margin-top: 30px;
-  display: ruby;
+  display: grid;
+  gap: 20px;
 }
-.multimedia img, .multimedia iframe {
+
+.multimedia img,
+.multimedia iframe {
   width: 350px;
   height: 280px;
   padding: 20px;
 }
 
-#datosCuriosos ol, #colaboraciones ul {
+#datosCuriosos ol,
+#colaboraciones ul {
   gap: 30px;
   display: grid;
   width: 100%;
-  height: 100%;
 }
 
-/*Página enlaces */
+/* Página enlaces */
 #enlaces {
   margin: 150px auto;
   width: 90%;
@@ -678,41 +648,37 @@ cite {
   width: 95%;
   margin: 100px auto 20px;
   padding: 45px;
-  display: flex;
 }
+
 .fuentesContenido h2 {
   font-size: 30px;
   text-decoration: dotted;
 }
-.fuentesContenido h3 {
-  font-size: 25px;
-}
+
+.fuentesContenido h3,
 .fuentesContenido a {
+  font-size: 25px;
   color: white;
   text-decoration: none;
 }
+
 .fuentesContenido a:hover {
   color: var(--color-letra);
   padding: 5px;
   font-weight: bold;
 }
-.fuentesContenido h3 {
-  margin: 10px;
-}
+
 .fuentesContenido ul li {
   line-height: 2;
   font-size: 20px;
 }
 
-.presentacionEnlaces .videosCanciones ul {
-  margin-left: 30px;
-}
-
+.presentacionEnlaces .videosCanciones ul,
 .categoriaEnlaces .noticiasPrensa ul {
   margin-left: 30px;
 }
 
-/*Seccion Footer*/
+/* Sección Footer */
 footer {
   background-color: black;
   display: flex;
@@ -723,43 +689,47 @@ footer {
   font-size: 18px;
   gap: 10px;
 }
-footer .enlaces-pagina ul{
-  display: flex;
-  gap: 10px;
-}
-footer .enlaces-pagina ul li a{
-  text-decoration: none;
-  color: white;
-}
 
+footer .enlaces-pagina ul,
 footer .redes-sociales ul {
   display: flex;
   gap: 15px;
 }
-footer .redes-sociales ul li,
-  footer .enlaces-pagina ul li {
+
+footer .enlaces-pagina ul li,
+footer .redes-sociales ul li {
   list-style: none;
+}
+
+footer .enlaces-pagina ul li a,
+footer .redes-sociales ul li a {
+  text-decoration: none;
   color: white;
 }
+
 footer .redes-sociales ul li a i {
-  color: white;
   font-size: 25px;
 }
 
 /* Estilos para pantallas más pequeñas */
 @media screen and (max-width: 800px) {
-  .redes, nav {
+  .redes, nav, footer .redes-sociales {
     display: none;
   }
+
   #icono-nav {
     display: inline;
     color: var(--color-letra);
     font-size: 25px;
+    margin-right: 15px;
+    cursor: pointer;
   }
+
   header {
     display: flex;
     width: 100%;
   }
+
   .responsive {
     background-color: #000;
     width: 100%;
@@ -770,79 +740,73 @@ footer .redes-sociales ul li a i {
     bottom: 20px;
     justify-content: end;
     left: 0;
- 
   }
+
   .responsive ul {
     text-align: center;
     display: block !important;
     background-color: black;
     padding: 10px;
   }
+
   .responsive ul li {
-    margin-top: 3px;
-    margin-bottom: 3px;
+    margin: 3px 0;
     padding: 5px;
   }
-  #icono-nav {
-    margin-right: 15px;
-    cursor: pointer;
-  }
+
   #sobremi {
     margin-top: 40px;
     display: block;
     text-align: center;
   }
+
   #sobremi .contenedor-foto {
     max-width: 200px;
     margin: auto;
   }
+
   #sobremi .contenedor-foto img {
     padding: 0;
     margin-bottom: 30px;
   }
+
   #sobremi .sobremi h2 {
     font-size: 20px;
   }
-  #servicios .servicios {
+
+  #servicios .servicios,
+  #portafolio .proyectos,
+  #contacto .contenedor-form .mitad,
+  .disco,
+  .discoDestacada,
+  .info-album,
+  .contenido-multimedia {
     display: block;
     margin: auto;
+    text-align: center;
   }
-  #servicios .servicios .servicio {
-    margin: 15px auto;
-  }
-  #portafolio .proyectos {
-    display: block;
-    margin: 15px auto;
-  }
-  #contacto .contenedor-form .mitad {
-    display: block;
-  }
+
+  #servicios .servicios .servicio,
+  #portafolio .proyectos,
   #contacto .contenedor-form .mitad input {
     margin: 15px auto;
   }
-  .disco{
-    display: block;
-  }
 
-  .disco .info{
+  .disco .info {
     width: 100%;
   }
 
-  .disco img{
-    width: 70%;
+  .disco img {
     margin: auto;
     display: flex;
   }
+
   .disco a {
     display: block;
     width: 60%;
   }
 
-  .discoDestacada{
-    display: block;
-  }
-
-  .discoDestacada .destacadas{
+  .discoDestacada .destacadas {
     width: 50%;
     margin: auto;
     display: flex;
@@ -850,46 +814,38 @@ footer .redes-sociales ul li a i {
     justify-content: center;
     align-items: center;
   }
-  .info-album {
-    display: block;
-  }
-  #info-album {
+
+  #info-album,
+  .listacanciones {
     width: 100%;
   }
+
   .listacanciones {
     justify-content: space-around;
-    width: 50%;
     line-height: 3;
-    display: block;
-    margin: auto;
-    text-align: center;
-  }
-  .contenido-multimedia {
-    margin: auto;
-    text-align: center;
-    display: block;
-  }
-  footer .redes-sociales {
-    display: none;
   }
 
-  footer .enlaces-pagina ul{
+  footer .enlaces-pagina ul {
     display: block;
   }
 }
+
 /* Estilos para pantallas medianas */
 @media screen and (min-width: 801px) and (max-width: 1200px) {
   .presentacion h2 {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px 0;
   }
-  #presentacioninicio, #biografia, #datosCuriosos, #colaboraciones {
+
+  #presentacioninicio, 
+  #biografia, 
+  #datosCuriosos, 
+  #colaboraciones {
     padding: 30px;
   }
-  #presentacion p, #presentacion li {
+
+  #presentacion p, 
+  #presentacion li {
     width: 90%;
-    margin: auto;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
   }
 }
-
