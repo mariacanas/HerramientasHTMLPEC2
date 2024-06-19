@@ -648,6 +648,7 @@ cite {
   width: 95%;
   margin: 100px auto 20px;
   padding: 45px;
+  display: flex;
 }
 
 .fuentesContenido h2 {
