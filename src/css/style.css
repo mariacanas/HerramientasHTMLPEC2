@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import "../../node_modules/normalize.css/normalize.css";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap");
 * {
   --color-letra: red;
