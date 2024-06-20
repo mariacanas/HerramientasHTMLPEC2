@@ -597,6 +597,10 @@ cite {
   width: 95%;
 }
 
+#colaboraciones{
+  margin: 10px;
+}
+
 #presentacion p,
 #presentacion li {
   width: 80%;
@@ -613,7 +617,7 @@ cite {
 
 .multimedia {
   margin-top: 30px;
-  display: grid;
+  display: flex;
   gap: 20px;
 }
 
