@@ -570,6 +570,7 @@ cite {
 
 .colaboraciones .multimedia{
   display: block;
+  margin-bottom: 100px;
 }
 /* Estilos para el SVG animado */
 .animated-line line {
