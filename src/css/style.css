@@ -571,6 +571,7 @@ cite {
 .colaboraciones .multimedia{
   display: block;
   margin-bottom: 100px;
+  margin-top: 100px;
 }
 /* Estilos para el SVG animado */
 .animated-line line {
