@@ -559,6 +559,13 @@ cite {
 .pregunta a:hover {
   color: red;
 }
+
+.colaboraciones{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 /* Estilos para el SVG animado */
 .animated-line line {
   stroke-dasharray: 150;
