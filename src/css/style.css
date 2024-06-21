@@ -843,6 +843,10 @@ footer .redes-sociales ul li a i {
     line-height: 3;
   }
 
+  .colaboraciones{
+    display: flex;
+  }
+
   footer .enlaces-pagina ul {
     display: block;
   }
