@@ -621,6 +621,7 @@ cite {
   gap: 20px;
   margin: auto;
   text-align: center;
+  justify-content: center;
 }
 
 .multimedia img,
