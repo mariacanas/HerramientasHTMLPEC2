@@ -565,6 +565,11 @@ cite {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 700px;
+}
+
+.colaboraciones .multimedia{
+  display: block;
 }
 /* Estilos para el SVG animado */
 .animated-line line {
@@ -641,7 +646,6 @@ cite {
 #datosCuriosos ol,
 #colaboraciones ul {
   gap: 30px;
-  display: grid;
   width: 100%;
 }
 
