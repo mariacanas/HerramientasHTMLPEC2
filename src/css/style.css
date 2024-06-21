@@ -800,7 +800,6 @@ footer .redes-sociales ul li a i {
   .info-album,
   .contenido-multimedia {
     display: block;
-    margin: auto;
     text-align: center;
   }
 
@@ -833,10 +832,6 @@ footer .redes-sociales ul li a i {
     align-items: center;
   }
 
-  #discografia{
-    justify-content: space-around;
-  }
-
   #info-album,
   .listacanciones {
     width: 100%;
@@ -849,6 +844,10 @@ footer .redes-sociales ul li a i {
 
   .colaboraciones{
     display: inline-flex;
+  }
+
+  .multimedia{
+    display: block;
   }
 
   footer .enlaces-pagina ul {
