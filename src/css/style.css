@@ -833,6 +833,10 @@ footer .redes-sociales ul li a i {
     align-items: center;
   }
 
+  #discografia{
+    justify-content: space-around;
+  }
+
   #info-album,
   .listacanciones {
     width: 100%;
