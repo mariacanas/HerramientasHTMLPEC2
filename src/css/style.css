@@ -844,7 +844,7 @@ footer .redes-sociales ul li a i {
   }
 
   .colaboraciones{
-    display: flex;
+    display: inline-flex;
   }
 
   footer .enlaces-pagina ul {
